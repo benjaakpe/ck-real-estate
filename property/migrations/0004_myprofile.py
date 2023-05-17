@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 (
                     "personal_photo",
                     models.ImageField(
-                        blank=True, null=True, upload_to="uploads/% Y/% m/% d/"
+                        blank=True, null=True, upload_to="statics/% Y/% m/% d/"
                     ),
                 ),
                 ("personal_inf", models.CharField(max_length=255)),

@@ -2,7 +2,7 @@ from django.db import models
 
 
 class MyProfile(models.Model):
-    personal_photo = models.ImageField(upload_to='uploads/% Y/% m/% d/', null=True, blank=True)  # pip install Pillow
+    personal_photo = models.ImageField(upload_to='statics/% Y/% m/% d/', null=True, blank=True)  # pip install Pillow
     My_Profile = models.CharField(max_length=255)
 
     def __str__(self):
@@ -59,10 +59,10 @@ class PropertyList(models.Model):
     year_built = models.IntegerField()
     build_up_size  = models.IntegerField()
     lot_size = models.IntegerField()
-    property_photo1 = models.ImageField(upload_to ='uploads/% Y/% m/% d/', null=True,blank=True) # pip install Pillow
-    property_photo2 = models.ImageField(upload_to ='uploads/% Y/% m/% d/',null=True,blank=True) # pip install Pillow
-    property_photo3 = models.ImageField(upload_to ='uploads/% Y/% m/% d/',null=True,blank=True) # pip install Pillow
-    property_photo4 = models.ImageField(upload_to ='uploads/% Y/% m/% d/',null=True,blank=True) # pip install Pillow
+    property_photo1 = models.ImageField(upload_to ='statics/% Y/% m/% d/', null=True,blank=True) # pip install Pillow
+    property_photo2 = models.ImageField(upload_to ='statics/% Y/% m/% d/',null=True,blank=True) # pip install Pillow
+    property_photo3 = models.ImageField(upload_to ='statics/% Y/% m/% d/',null=True,blank=True) # pip install Pillow
+    property_photo4 = models.ImageField(upload_to ='statics/% Y/% m/% d/',null=True,blank=True) # pip install Pillow
 
 
 

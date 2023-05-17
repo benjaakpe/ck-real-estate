@@ -13,22 +13,22 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='propertydetails',
             name='property_photo1',
-            field=models.ImageField(blank=True, null=True, upload_to='uploads/% Y/% m/% d/'),
+            field=models.ImageField(blank=True, null=True, upload_to='statics/% Y/% m/% d/'),
         ),
         migrations.AlterField(
             model_name='propertydetails',
             name='property_photo2',
-            field=models.ImageField(blank=True, null=True, upload_to='uploads/% Y/% m/% d/'),
+            field=models.ImageField(blank=True, null=True, upload_to='statics/% Y/% m/% d/'),
         ),
         migrations.AlterField(
             model_name='propertydetails',
             name='property_photo3',
-            field=models.ImageField(blank=True, null=True, upload_to='uploads/% Y/% m/% d/'),
+            field=models.ImageField(blank=True, null=True, upload_to='statics/% Y/% m/% d/'),
         ),
         migrations.AlterField(
             model_name='propertydetails',
             name='property_photo4',
-            field=models.ImageField(blank=True, null=True, upload_to='uploads/% Y/% m/% d/'),
+            field=models.ImageField(blank=True, null=True, upload_to='statics/% Y/% m/% d/'),
         ),
 
     ]

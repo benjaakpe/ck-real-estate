@@ -44,10 +44,10 @@ class Migration(migrations.Migration):
                 ('year_built', models.IntegerField()),
                 ('build_up_size', models.IntegerField()),
                 ('lot_size', models.IntegerField()),
-                ('property_photo1', models.ImageField(upload_to='uploads/% Y/% m/% d/')),
-                ('property_photo2', models.ImageField(upload_to='uploads/% Y/% m/% d/')),
-                ('property_photo3', models.ImageField(upload_to='uploads/% Y/% m/% d/')),
-                ('property_photo4', models.ImageField(upload_to='uploads/% Y/% m/% d/')),
+                ('property_photo1', models.ImageField(upload_to='statics/% Y/% m/% d/')),
+                ('property_photo2', models.ImageField(upload_to='statics/% Y/% m/% d/')),
+                ('property_photo3', models.ImageField(upload_to='statics/% Y/% m/% d/')),
+                ('property_photo4', models.ImageField(upload_to='statics/% Y/% m/% d/')),
             ],
         ),
         migrations.CreateModel(
@@ -81,7 +81,7 @@ class Migration(migrations.Migration):
             name='MyProfile',
             fields=[
                 ('personal_inf', models.CharField(max_length=255)),
-                ('personal_photo', models.ImageField(upload_to='uploads/% Y/% m/% d/')),
+                ('personal_photo', models.ImageField(upload_to='statics/% Y/% m/% d/')),
             ],
         ),
 
